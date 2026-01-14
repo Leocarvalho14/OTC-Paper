@@ -9,7 +9,7 @@
 | 1.5 | Abnormal instrument reading on gearbox compressor thrust bearing temperature (MAIN B) | MV32 | $174,154 | 01/28/25 |
 | 1.6 | Abnormal instrument reading on compressor axial displacement (VRU) | MV26 | $54,322 | 02/07/25 |
 | 1.7 | Abnormal instrument reading on compressor thrust bearing temperature (MAIN B) | MV24 | $177,068 | 02/07/25 |
-| 1.8 | Abnormal instrument reading on turbine stator temperature (GTG) | MV33 | $85,171 | 11/26/25 |
+| 1.8 | Abnormal instrument reading on turbine stator temperature (GTG) | MV33 | $85,171 | 01/10/25 |
 | 1.9 | Abnormal instrument reading on gearbox thrust bearing temperature (RE- INJECTION) | MV24 | $75,352 | 03/07/25 |
 | 1.10 | Liquid Carry Over on VRU Compressor (2ND STAGE DEGASSER) | MV33 | $1,051,804 | 03/12/25 |
 | 1.11 | High Vibration on pump’s electric motor (SRU) | MV27 | $371,127 | 04/17/25 |
@@ -26,10 +26,11 @@
 | 1.22 | Higher rates of increase in differential seal gas pressure (MAIN A) | MV24 | $156,120 | 08/15/25 |
 | 1.23 | Abnormal instrument readings on seal gas supply flow (RE- INJECTION) | MV27 | $78,262 | 10/13/25 |
 | 1.24 | Abnormal instrument reading on motor non drive end temperature (SWIP) | MV27 | $64,566 | 10/13/25 |
-| 1.25 | Abnormal instrument readings on  gear shaft low speed bearing temperature (VRU) | MV26 | $134,636 | 10/16/25 |
+| 1.25 | Abnormal instrument readings on  gear shaft low speed bearing temperature (VRU) | MV33 | $134,636 | 10/16/25 |
 | 1.26 | Abnormal instrument readings on Compressor Thrust Bearing temperature (MAIN) | MV33 | $164,111 | 10/29/25 |
 | 1.27 | Abnormal instrument readings on motor stator temperature (CM PUMP) | MV33 | $63,042 | 10/29/25 |
 | 1.28 | Abnormal instrument readings on electric generator stator temperature (GTG) | MV33 | $85,171 | 10/22/25 |
+| 1.29 | Vibration increase on gearbox Vorecon compressor | MV30 | $2,365,927 | 10/12/25 |
 | 1.30 | Abnormal instrument readings on motor non drive end bearing temperature (MAIN B) | MV30 | $178,702 | 11/24/25 |
 | 1.31 | High Vibration induced by incipient surge/stall on compressor (MAIN B) | MV27 | $1,268,110 | 11/19/25 |
 | 1.32 | Low Efficiency Thermical due to low lube oil pressure on header (MAIN B) | MV30 | $616,681 | 10/24/25 |
@@ -38,4 +39,6 @@
 | 2.1 | Accelerated increase in differential pressure on Heat Exchanger due to Scaling (CRUDE HEATER C) | MV27 | $1,985,233 | 02/10/25 |
 | 2.2 | Low Performance on heater exchanger system due to Scaling (HEATER EXCHANGER) | MV26 | $2,010,524 | 03/11/25 |
 | 2.3 | Low Performance on crude heater due to scaling | MV24 | $2,003,930 | 01/24/25 |
-| **TOTAL** | | | **$16,194,397** | |
+| **TOTAL** | | | **$18,560,324** | |
+
+---
