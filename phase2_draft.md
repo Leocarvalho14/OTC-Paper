@@ -10,7 +10,7 @@ Following the validation of the Proof of Concept in Phase 1, the program faced s
 **FMECA Integration and Knowledge-Based Models (Addressing Hypothesis 1)**
 To validate Hypothesis 1, the team conducted extensive workshops with subject matter experts to redefine the criteria for "useful alarms." Using the ISO 13379 series as a framework, the program pivoted from generic anomaly detection to specific failure mode identification.
 
-This shift led to the widespread adoption of **Knowledge-Based models**, which utilize engineering equations and pre-established design limits to identify known failure patterns. Unlike generic data-driven alerts, these models direct the user's attention to specific, actionable issues (e.g., distinguishing "Lube Oil Filter Clogging" from general "Vibration Anomaly"). This approach drastically reduced false positives and standardized the definition of a "success case" from simply "catching an anomaly" to "preventing a specific failure mode."
+This shift led to the widespread adoption of **Knowledge-Based models**, which utilize engineering equations and pre-established design limits to identify known failure patterns. Unlike generic data-driven alerts, these models direct the user's attention to specific, actionable issues (e.g., distinguishing "Lube Oil Filter Clogging" from general "Vibration Anomaly"). This approach drastically reduced false positives and standardized the definition of a "success case" from simply "catching an anomaly" to "preventing a specific failure mode." By 2023, these Knowledge-Based models were the primary engine of the program, accounting for **70% of all successful cases**.
 
 **The Asset-Centric Data Model (Addressing Hypothesis 2)**
 Hypothesis 2 addressed the primary technical bottleneck: the Phase 1 "Direct Tag Binding" architecture. In that initial flat architecture, analytical models were coupled directly to raw sensor tags (e.g., `40_TI_1434.PV`) within the historian database. This created significant friction:
@@ -27,4 +27,10 @@ This semantic layer fundamentally changed deployment velocity. By decoupling mod
 **Standardization and Diagnostic Efficiency (Addressing Hypothesis 3)**
 Addressing Hypothesis 3, the new application interface leveraged the contextualized data layer to streamline the diagnosis workflow. By aggregating all digital information—real-time sensor trends, historical alarms, and technical documentation—into a single view, the interface eliminated the need for engineers to cross-reference multiple systems.
 
-Metrics tracking user behavior confirmed that this centralization significantly reduced the cognitive load during investigations. These strategic pivots in Phase 2 allowed the program to scale from monitoring hundreds to thousands of assets while simultaneously increasing alarm precision, creating the robust data foundation necessary for the advanced AI integration in Phase 3.
+Metrics tracking user behavior confirmed that this centralization significantly reduced the cognitive load during investigations. By the end of Phase 2, the program had achieved significant milestones:
+
+*   **Value Generation:** Annual avoided losses grew significantly, from **$4.5 million in 2022** to **$14.1 million in 2024**.
+*   **Efficiency:** The average value per successful case increased from **$195k** to **$307k**, indicating a shift towards capturing more critical failures.
+*   **The Cost of Scale:** However, scaling also brought challenges. As the asset count grew, so did the noise. In 2024, the total alarm count spiked to **2,754** with a precision of **49.1%**, creating an unsustainable workload for the engineering team.
+
+These strategic pivots in Phase 2 successfully solved the *data* scalability problem, but the resulting flood of alerts highlighted the need for the advanced *cognitive* integration that would define Phase 3.
