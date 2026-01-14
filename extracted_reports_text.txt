@@ -1,0 +1,528 @@
+--- REPORT: 2022 Report.pdf ---
+PAGE 1:
+Monthly reportJanuary – December 2022
+Issued by Shape with the support of MODEC
+Monthly report
+Prepared by Shape with the support of MODECDecember 2022
+---
+PAGE 2:
+Monthly reportJanuary – December 2022
+Breakdown of losses, $M USD, 2022 Jan - Nov48,1337,7826,6410,3511,14Total Potential LossesNon-Avoided LossesNon-avoided Addressable LossesNon-avoided Non-Addressable LossesPotential Avoided LossesConclusion of MV30 and MV31 PdM replication. Total of 249 new equipment, including new model for MV30 Siemens GTG.Concluded the elaboration of electric Generator prioritized algorithms based on FMEA and performed the basic replication to all GTG generators in the fleet.The two potential scaling cases in MV27 and MV30 identified by PdM tool on Nov 3rdand Oct 28th, respectively, are still under investigation.The scaling model's implementation is not complete due to the lack of sensor historical data. We are now working on the model’s infrastructure to ensure that new techniques could be developed. 
+Highlights
+Theoretical total loss if PdM was not being used. It is calculated as the sum of Potential Avoided Losses and Non-Avoided Losses.Sum of potential losses avoided by PdM (detection cases). These gains are predicted and are counted after a maintenance notification is issued.Sum of true losses as recorded by MODEC in Salesforce.Subset of Non-Avoided Losses that cannot be avoided by PdM, either by definition(e.g., offloading delays) or due to the lack of required sensing technology. This definition will be updated as situation changes.Subset of Non-Avoided Losses that could have been avoided by PdM(i.e., we have the required sensors installed to monitor the failure mode).Reasons for these failures include coverage gaps (equipment or failure modes for which we do not have a model yet), model failure (our existing models failed to detect the issue), or execution issues (appropriate mitigation action was either not recommended or not executed before the failure happened).
+Total Potential Losses1Potential Avoided LossesNon-Avoided LossesNon-Addressable Non-Avoided LossesAddressable Non-Avoided Losses
+MetricWhat the metric means
+Lowlights
+Losses, $M USD, 2022 Jan - Dec
+18,334,858,316,2911,1426,64Non-Avoided Adressable  LossesNon-AvoidedNon-Addressable LossesNAMsDowntime
+ML1ML2
+---
+PAGE 3:
+Slide 2
+ML1 Estava 9,68 alterei para 11,14
+Melissa Lopes; 2023-01-09T19:00:32.529
+ML2 Ainda sem os de dezembro
+Melissa Lopes; 2023-01-09T19:06:52.180
+---
+PAGE 4:
+Monthly reportJanuary – December 2022Worst case Potential Saving (USD)Short storyModelling approachNotification dateEquipment tagEquipmentVesselNo $500.000 The system detected abnormal temperature would lead to bearing damage and replacement.Machine learning2022-04-02MV29-CM-2210A-5SMV29-CM-2210A (MOTOR MAIN A)MV291 $500.000 The system detected abnormal axial displacement could lead to equipment misaligmentMachine learning2022-04-01MV30-1S-CBA-2120AMV30-CBA-2110A (VRU A)MV302 $1,700.750 The system detected that the lost of efiency in the heat exchanger can be caused by scaling depositMachine learning2022-05-15MV27-HZZ-1110A-2P /MV27-HZZ-1110B-2P/MV27-HZZ-1110C-2PMV27-HZZ1110-A/B/C (Crude Crude)MV273 $50.000 The system detected that abnormal temperature in the fuel nozzles that requires sensor replacementMachine learning2022-05-23MV24-GTG-4010C-8SMV24-GTG-4010A (GTG)MV244 $600.000 The system detected high vibration of the pump and electric motor DE bearings with signals of misalignmentKnowledge-based 2022-06-22MV26-PAT-1545A-5PMV26-PAT-1545A (SWIP A)MV265 $95.000 The system detected a oil level decreasing tendency on the last 6.6 days previous at the alarmKnowledge-based 2022-06-09MV24-PAT-1545C-5PMV24-PAT-1545C (SWIP C)MV246 $95.000The system detected a oil level decreasing tendency on the last 16.4 days previous at the alarmKnowledge-based 2022-07-11MV24-PAT-1545A-5PMV24-PAT-1545A (SWIP A)MV247 $200.000 The system detected a overheating on temperature sensors of  NDE Bearing that could lead to bearing damagesKnowledge-based 2022-07-26MV26-PBE-1525A-6P MV26-PBE-1525A (SRU A)MV268 $95.000 High temperature on one of three motor phases.Knowledge-based 2022-07-21MV24-CM-2430A-5SMV24-CM-2430A (MOTOR RE-INJECTION)MV249 $75.000 System detected incipient signals of sensor's abnormal readigns with under zero measurementsKnowledge-based2022-08-31MV26-CBA-2110A-1CMV26-CBA-2110A (VRU A)MV2610 $230.000 The system detected abnormal temperature would lead to bearing damage and replacement.Machine learning2022-09-17MV30-3S-TE-2413-60AMV30-CBA-2210A (MAIN B)MV3011 $150.000 The system detect a high vibration in the pump DE side that could damage the bearings Knowledge-based 2022-08-09MV27-PAT-1545C-8PMV27-PAT-1545C (SWIP C)MV2712 $1,694.000 System displayed an increase of dp on the hot sideMachine learning2022-08-15MV26-HZZ-1110A-3P / MV26-HZZ-1110B-3PMV26-HZZ-1110A/B (Crude Crude)MV2613 $1,619.000System displayed an increase of differential pressure on the hot sideMachine learning2022-09-01MV24-HZZ-1110A-3P / MV24-HZZ-1110B-3PMV24-HZZ-1110A/B (Crude Crude)MV2414 $ 1.272.790 System detected an abnormal vibration readingKnowledge-based2022-09-18TIT-2210C-23MV24-CBA-2210B-3SMV2415 $ 120,000 Crude Heater Sensor MalfunctioningMachine learning2022-10-25MV30-HBG-1120ACrude Crude Exchanger -A/B/CMV3016 $ 600,000Abnormal Motor Bearing High Vibration in SWLPKnowledge-based2022-10-02MV27-PM-4205A-MDMV27-PM-4205A (SWLP)MV2717 $ 150,000 Pump high bearing vibration and shaft displacement in SWIPKnowledge-based2022-10-24MV27-PAT-1545B-8PMV27-PAT-1545B (SWIP)MV2718 $ 600,000Pump Operation under Minimum Continous FlowKnowledge-based2022-11-21MV31-SRU-PBE-4205AMV31-PBE-4205A (SWLP)MV3119 $10.346,54Total saving (KUSD)
+Retroactive casesSummary of successful cases
+ML1
+---
+PAGE 5:
+Slide 3
+ML1 Adicionar cases novos
+Melissa Lopes; 2023-01-10T18:49:25.379
+---
+--- REPORT: 2023 Report.pdf ---
+PAGE 1:
+Quarterly reportJanuary – December 2023
+Issued by Shape withthe support of MODEC
+Quarterly report
+Prepared by Shape with the support of MODECJanuary - December 2023
+---
+PAGE 2:
+Quarterly reportJanuary – December 2023WHAT THE METRIC MEANSMETRICTheoretical total loss if PdM was not being used. It is calculated as the sum of the Avoided Losses and Actual Losses.TotalSum of losses avoided by PdM (successful cases). The successful cases are the events that were avoided by PdM generating savings to SPC and approved by MODEC´s Operation Managers and Tier 2R team.Avoided LossesSum of true losses as recorded by MODEC in Salesforce.Actual LossesSubset of Losses that cannot be avoided by PdM, either by definition (e.g., offloading delays) or due to the lack of required sensing technology. This definition will be updated as situation changes.Non-Addressable LossesSubset of Losses that could have been avoided by PdM(i.e., we have the required sensors installed to monitor the failure mode).Reasons for these failures include coverage gaps (equipment or failure modes for which we do not have a model yet), model failure (our existing models failed to detect the issue), or execution issues (appropriate mitigation action was either not recommended or not executed before the failure happened).Addressable LossesLOSSES, $M USD | 2023 JAN-DECBREAKDOWN OF LOSSES, $M USD | 2023 JAN-DEC
+HIGHLIGHTSAnomaly machine learning model was expanded to all compressors and GTG and is presenting good performance.Trend machine learning model is being expanded to new failure modes as VSV position error and Lube Oil High Temperature.New machine learning models as Sensor Quality and Comparison were successfully deployed to compressors and pumps and Lube Oil Leakage to compressors. The total savings with the machine learning models developed in 2023 was approximately $3,0 MM USD.LOWLIGHTSAlthough new machine learning models were successfully developed and deployed, it is being challenge to keep he performance to the newer vessels due lack of data. It was necessary to turn off the trend machine learning to the pumps from MV33 and additionally, the deployment of the anomaly and comparison model to the vessels from MV30 to MV33 are still pending.
+ 42,30 8,75
+Non-Addressable Losses
+ 12,86 7,30
+Addressable  Losses
+51,0520,16Downtime NAMs 84,45Total 13,24Avoided Losses 71,21Actual Losses 20,16Addressable Losses 51,05Non-Addressable Losses
+---
+PAGE 3:
+Quarterly reportJanuary – December 20231,32376355
+DEFINITIONS# Useful AlarmsAlarms answered by Modec's engineers (Tier2) that were considered true alarms and supported asset health management, resulting in financial gains or not.
+Successful CasesThe Alarms that could result in savings to SPC with recommendation to Tier 1, accordingly to the protocol agreed
+# TOTAL 2023 AlarmsNumber of models that alarmed from Jan to September at PdM tool
+# TOTAL 2023 Alarms# TOTAL Useful Alarms# TOTAL Successful Cases
+RECOMMENDATIONS FUNNEL
+39115 Knowledge BasedMachine LearningScalingBREAKDOWN SUCCESFUL CASES
+Successful cases checklistBe a potential failure that could result in savings to SPC, validated by MODEC Tier 2 Reliability team.
+PdM is the first tool to identify the event.
+Be validated by the Operation Managers.
+ML1
+---
+PAGE 4:
+Slide 3
+ML1 Q4: 557 alarms / 295 Useful / 11 cases
+Melissa Lopes; 2024-01-09T21:13:32.026
+ML1 0 Total: 58 cases / 
+Melissa Lopes; 2024-01-09T21:27:24.449
+ML1 1 1323 alarmes (766 acumulados + q4) / 763 useful (468 acumulados + q4)
+Melissa Lopes; 2024-01-09T21:30:55.173
+ML1 2 [@Leonardo Carvalho]  checar por gentileza!
+Melissa Lopes; 2024-01-09T21:32:31.678
+---
+PAGE 5:
+Quarterly reportJanuary – December 2023Saving (USD)Short storyModellingapproachNotificationdateEquipment tagEquipmentVesselNo 211,024Gas Turbine Combustion chamber thermocouple abnormallyMachine Learning2023-03-26MV24-GTG-4010C-8SGTGMV241.1 300,551Sea Water Injection Pumppresenting signs of misalignmentMachine Learning2023-03-30MV26-PAT-1545A-5PSWIP AMV261.2 358,876Temperature Data abnormally (MainC Motor)Machine Learning2023-04-05MV29-CM-2420A-5SMAIN C MotorMV291.3 214,420Abnormallyon Compressor’s vibration dataMachine Learning2023-04-17MV24-CBA-2210A-3SMAIN AMV241.4 830,714Compressor vibration increasingtendencyMachine Learning2023-05-15MV24-CBA-2120-1CVRUMV241.5 65,083Abnormal readings on compressor’svibration trendMachine Learning2023-07-28MV31-CBA-2110A (VRU)VRUMV311.6 192,998Electric Motor’s bearing vibration increaseMachine Learning2023-08-02MV24-PM-1545C (MOTOR SWIP)Electric MotorMV241.7 877,989Compressor’s bearing temperatureincreaseMachine Learning2023-09-15MV29-CBA-2110A (VRU)VRUMV291.8 110,339Gearbox bearing temperatureabnormal behaviorMachine Learning2023-11-28MV27-CBA-3150A (GAS LIFT)GAS LIFTMV271.9 439,390Compressor Primary Seal Gas flowsudden dropMachine Learning2023-11-24MV24-CBA-2210A (MAIN A)MAIN AMV241.10 924,652Compressor Lube Oil LeakageMachine Learning2023-12-07MV24-CBA-2110 (VRU)VRUMV241.11 $ 4,526,036Total saving (KUSD)
+Summary of successful cases 
+Saving (USD)Short storyModeling approachNotification dateEquipment tagEquipmentVesselNo $ 337,754Scaling formation on Crude Crude ExchangerMachine Learning2023-01-12MV31-HPL-1110A/B/CCrude-crudeExchangerMV312.1 $ 337,754Scaling on Crude Heater exchangerMachine Learning2023-02-16MV29-HPL-1120A/BCrude Heater ExchangerMV292.2 $ 1,087,334Scaling formation on Crude Heater ExchangerMachine Learning2023-02-28MV30-HBG-1120A/B/CCrude HeaterExchangerMV302.3 $ 256,653Electrostatic Treater 1st Pump Performance LossMachine Learning2023-03-03MV27-PBA-1135A/BElectrostaticPump 1stMV272.4 $ 297,643Scaling signs on Crude Crude ExchangerMachine Learning2023-03-21MV24-HZZ-1110A/BCrude-crudeExchangerMV242.5 $ 2,317,137Total saving (KUSD)
+•Machine Learning cases
+•Scaling cases
+•Knowledge-based casesSaving (USD)Short storyModeling approachNotification dateEquipment tagEquipmentVesselNo 215,526Gearbox 1st Stage Temperature Transmitter MalfunctionKnowledge-based2023-02-02MV24-CBA-2110-1CVRUMV243.1 127,431Electric motor winding temperature transmitter failureKnowledge-based2023-02-16MV26-CM-2210A-3SMAIN A MotorMV263.2 127,431Low Lube Oil Header PressureKnowledge-based2023-02-23MV27-CBA-2210CMAIN AMV273.3 144,538Electric motor bearing vibration increaseKnowledge-based2023-02-28MV24-PM-1545C-5PSWIP MotorMV243.4 195,531Compressor bearing vibration increaseKnowledge- based2023-02-16MV30-3S-CBA-2420BMAIN BMV303.5 312,742Underload on thrust bearingKnowledge- based2023-03-02MV24-GTG-4010D-8SGTGMV243.6 64,857Lube oil leakage characteristicKnowledge- based2023-03-15MV30-1S-CBA-2120AVRUMV303.7 305,269Overload on thrust bearingKnowledge- based2023-03-31MV24-GTG-4010C-8SGas TurbineMV243.8 144,538Pump bearing vibration increaseKnowledge- based2023-04-07MV26-PBE-1525B-6PSRUMV263.9 144,538Pump bearing vibration increaseKnowledge- based2023-04-07MV26-PBE-1525A-6PSRUMV263.10 365,650Motor bearing temperature increaseKnowledge- based2023-04-11MV27-PM-1545B-8PSWIP MotorMV273.11 312,742Underload on thrust bearingKnowledge- based2023-04-28MV26-GTG-4010D-8SGTGMV263.12
+---
+--- REPORT: 2024 Report.pdf ---
+PAGE 1:
+Quarterly report January-December 2024
+Issued by Shape with
+the support of 
+MODEC
+Annual report
+Prepared by Shape with the support of MODEC
+Q1-Q4  2024 ( January – December)
+---
+PAGE 2:
+Quarterly report January-December 2024
+INDEX
+1- OVERVIEW OF 2024 SHAPE´S RESULTS (January – December)
+2- SUCCESSFUL CASES STATUS – 2024
+3- SUMMARY OF CLOSED CASES IN 2024
+4- SUCCESSFUL CASES STATUS – 2023
+ 
+5- MACHINE LEARNING MODELS GLOSSARY
+6- MACHINE LEARNING CASES – 2024
+7- MACHINE LEARNING FOR SCALING CASES – 2024
+8- KNOWLEDGE BASED CASES – 2024
+9- CLOSED CASES – 2023
+10- CLOSED CASES 2024
+---
+PAGE 3:
+Quarterly report January-December 2024
+METRIC WHAT THE METRIC MEANS
+Total Theoretical total loss if PdM was not being used. It is calculated as the sum of the Avoided Losses 
+and Actual Losses.
+Avoided Losses
+Sum of losses avoided by PdM (successful cases).  The successful cases are the events that were 
+avoided by PdM generating savings to SPC and approved by MODEC´s Operation Managers and 
+Tier 2R team.
+Actual Losses Sum of true losses as recorded by MODEC in Salesforce.
+Non-Addressable Losses Subset of Losses that cannot be avoided by PdM, either by definition (e.g., offloading delays) or 
+due to the lack of required sensing technology. This definition will be updated as situation changes.
+Addressable Losses
+Subset of Losses that could have been avoided by PdM (i.e., we have the required sensors 
+installed to monitor the failure mode).
+Reasons for these failures include coverage gaps (equipment or failure modes for which we do not 
+have a model yet), model failure (our existing models failed to detect the issue), or execution 
+issues (appropriate mitigation action was either not recommended or not executed before the 
+failure happened).
+LOSSES, $M USD | 2024 JAN-DEC BREAKDOWN OF LOSSES, $M USD | 2024 JAN-DEC
+FOURTH QUARTER HIGHLIGHTS
+▪ The Liquid Carry Over model has been implemented across the entire SPC fleet of VRU, capturing the first success case in November
+▪ Workshop FMEA VRU Compressor with MODEC’s Team occurred successfully and already gave us important insights for new SPC fleet monitoring, 
+which present opportunities for 2025
+▪ Scaling 2.0 under deployment across the entire SPC fleet.
+▪ Multiparameter trend model on bearing temperature and bearing vibration deployed in scale to 150+ critical pumps and compressors of SPC fleet 
+▪ The alarms acknowledgement of Shape models led to 9 confirmed ML cases and 4 KB cases in the quarter, totaling 44 cases in 2024, resulting in 
+approximately 14 million dollars in savings.
+FOURTH QUARTER LOWLIGHT
+▪ The launch of Lighthouse for the process team experienced a postponement but was successfully executed in 2024.
+13,77
+3,98
+16,88
+4,65
+Non-Addressable Losses Addressable  Losses
+30,65
+8,63
+Downtime
+NAMs
+53,4Total
+14,13Avoided Losses
+39,28Actual Losses
+8,63Addressable Losses
+30,65Non-Addressable Losses
+---
+PAGE 4:
+Quarterly report January-December 2024
+34
+10
+2
+Total Successful Cases
+2754
+1353
+46
+12
+DEFINITIONS
+# Useful Alarms
+Alarms answered by Modec's 
+engineers (Tier2) that were 
+considered true alarms and 
+supported asset health management, 
+resulting in financial gains or not.
+Successful Cases
+The Alarms that could result in savings 
+to SPC with recommendation to Tier 1, 
+accordingly to the protocol agreed
+# TOTAL Q4 YTD 2024 Alarms
+Number of models that alarmed 
+from January to December  2024 
+at Lighthouse.
+# TOTAL Alarms
+# TOTAL Useful Alarms
+RECOMMENDATIONS FUNNEL (Jan-December 2024)
+Knowledge Based
+Machine Learning
+Scaling
+BREAKDOWN SUCCESFUL CASES - 2024
+Successful cases checklist
+Related alarms have not been issued on the DCS.
+The problem has not been identified in the past in some way.
+The parties confirm the value of Shape´s alarm findings, including Ops. Managers.
+# TOTAL Successful Cases
+# TOTAL Closed Cases
+Closed Cases
+Event identified by machine learning model multiple parameters.
+Knowledge Based
+Machine Learning
+Scaling
+9
+1
+2
+---
+PAGE 5:
+Quarterly report January – December 2024
+No Vessel Date Description Status SAP Note/ 
+WO
+Closed 
+date
+Investigation Results
+Actual 
+Cost (X) 
+(USD)
+Y (USD) Z (Y-X) 
+USD
+1.1 MV26 12/09/2023
+Compressor bearing 
+vibration increase (RE-
+INJECTION)
+ongoing 11401474
+405264902 - - - 361,911 361,911
+1.2 MV30 12/06/2023
+Abnormal readings on 
+compressor’s axial 
+displacement (CO2 
+Compressor)
+ongoing 11449497
+405310226 - - - 92,710 92,710
+1.3 MV30 2/18/2024
+Abnormal readings on 
+compressor’s gearbox 
+bearing temperature (CO2 
+Compressor)
+ongoing 11491195
+405351329 - - - 422,127 422,127 
+1.4 MV27 3/6/2024
+Abnormal readings on 
+compressor’s gearbox 
+bearing vibration (Main A)
+ongoing 11510561
+405379265 - - - 155,312 155,312 
+1.5 MV29 3/5/2024
+Abnormal readings on 
+pump’s shaft axial 
+displacement (SWIP)
+ongoing 11509154
+405366599 - - - 80,618 80,618 
+1.6 MV26 9/2/2023
+Pump presenting signs of 
+coupling issues and 
+bearing damage (SWIP)
+ongoing 11502418
+405360424 - - - 187,582 187,582 
+1.7 MV32 3/6/2024
+Abnormal Instrument 
+Reading on compressor’s 
+thrust bearing (MAIN B)
+closed 11519268
+405377062 6/26/24 Loose cables on temperature's sensor 145.32 167,547 167,402 
+1.8 MV26 3/15/2024 Pump bearing vibration 
+increase (SWIP) closed 11512080
+405369552 4/16/24
+Removed the film protections.
+The spool was removed and the blades 
+were dismantled.
+The reel was assembled with the new 
+sets of blades.
+Reel installation carried out.
+The equipment was aligned and the base 
+was torqued.
+The shielding protections have been 
+closed.
+2,988.61 238,802 235,814
+1.9 MV31 3/16/2024
+Abnormal readings on 
+electric motor’s ventilation 
+system (Motor SWIP)
+ongoing 11513412
+405371501 - - 971,288 971,288
+1.10 MV30 3/29/2024
+Abnormal Instrument 
+Reading on pump’s thrust 
+bearing (SWIP)
+closed 11530330
+405388751 4/19/24
+During the investigation of the PT-100 
+temperature sensor failure, some 
+terminals were identified in the terminal 
+interconnection box, some terminals 
+were almost loose, all terminals were 
+retightened, resistance measurement 
+was carried out on the PT-100 
+temperature sensor, both A/B have the 
+correct values 110 Ω referring to the 
+ambient temperature 27°C. A functional 
+test of the mesh was carried out, 
+generating a signal in the field and 
+visualizing it at the control station in 
+conjunction with the CCR, which 
+obtained satisfactory results.
+145.32 75,373 75,227 
+1.11 MV27 4/23/2024 VSV position error increase 
+(GTG) closed 11561827 
+405418208 10/19/24
+An inspection has been done by BH 
+mechanical and control system  FSE, 
+during the execution of L1, and some 
+deviations were found, the damaged 
+parts have been replaced as per BH FSE 
+report attached on this WO.
+363.30 149,978 149,615
+1.12 MV30 5/23/2024
+Abnormal Instrument 
+Reading on compressor’s 
+axial displacement (MAIN 
+B)
+ongoing 11594757 
+405454264 - - - 171,770 171,770 
+1.13 MV27 2/5/2024
+Abnormal Instrument 
+Reading on compressor’s 
+axial displacement (VRU)
+ongoing 11565666 
+405420522 - - - 52,471 52,471
+1.14 MV29 8/4/2024
+Abnormal behavior on 
+Generator Stator Winding 
+thermocouple (GTG)
+closed 11562667  
+405418197 12/18/24
+As requested, the entire interconnection 
+of the temperature element has been 
+checked, it is indicating coherent values, 
+the terminals have been checked for 
+tightness and the operation has been 
+tested, the entire loop between the JB 
+and the Panel has been checked, values 
+have been simulated with resistive decay, 
+evidence is attached.
+217.98 221,642 221,424 
+1.15 MV30​ 7/4/2024​ Lube Oil Pressure Drop 
+(VRU)​
+ongoing 11677127​
+405529220​
+- - - 85,833 85,833​
+1.16​ MV30​ ​7/8/2024​
+Abnormal instrument 
+reading on electric 
+generator’s drive end 
+bearing temperature 
+(GTG)​
+ongoing
+11660168​
+405510897​ - - - 182,591 182,591
+Successful cases Status - 2024 
+• Machine Learning cases
+---
+--- REPORT: 2025 Report.pdf ---
+PAGE 1:
+Quarterly Report  | January - December 2025
+Annual Report
+Prepared by Shapewith the support of MODEC
+Q4/2025 (January –  December)
+Revision 1 – January 6th, 2026 
+
+---
+PAGE 2:
+Quarterly Report  | January - December 2025
+INDEX
+1 – METRIC’S QUARTERLY REPORT
+2 – RECOMMENDATION’S FUNNEL (JANUARY – DECEMBER)
+3 – COMPLETED CASES METRICS
+4 – MACHINE LEARNING MODELS GLOSSARY
+5 – SUCCESSFULL MACHINE LEARNING CASES INDEX – 2025
+6 – MACHINE LEARNING  COMPLETED CASES INDEX – 2024
+7 – KNOWLEDGE BASED CASES INDEX – 2025 & 2024
+Updated!
+---
+PAGE 3:
+Quarterly Report  | January - December 2025
+5,07
+25,59
+5,09
+11,21
+Adressable Non Adressable
+AddAdd
+METRIC WHAT THE METRIC MEANS
+Total Theoretical total loss if Lighthouse (LH)  was not being used. It is calculated as the sum of the 
+Avoided Losses and Actual Losses .
+Avoided Losses
+Sum of losses avoided by LH (successful cases).  The successful  cases are the events that 
+were avoided by LH generating savings to SPC and approved by MODEC ´s Operation 
+Managers and Tier 2R team.
+Actual Losses Sum of true losses as recorded by MODEC in Salesforce.
+Non Adressable Losses
+Subset of Losses that cannot be avoided by LH, either by definition (e.g., offloading  delays) or 
+due to the lack of required sensing technology . This definition will be updated as situation 
+changes.
+Addressable Losses
+Subset of Losses that could have been avoided by LH (i.e., we have the required parameters  
+installed to monitor the failure mode).
+Reasons for these failures include coverage gaps (equipment  or failure modes for which we do 
+not have a model yet), model failure (our existing models failed to detect the issue), or 
+execution issues (appropriate  mitigation  action was either not recommended  or not executed 
+before the failure happened).
+LOSSES, $M USD | 2025 JAN-DEC BREAKDOWN OF LOSSES, $M USD | 2025 JAN-DEC
+QUARTER HIGHLIGHTS
+✓ 67% of this year’s cases were closed.
+✓ USD 11.61M in Completed Cases during the year (USD 1.45M per vessel).
+✓ Achieved USD 18.8M in Successful Cases.
+✓ Reduced Total Alarms by 34%.
+✓ Shape Intel detected 33% of Q4 cases, demonstrating that the MVP model is already generating measurable 
+savings
+QUARTER LOWLIGHT
+✓ LSTM Anomaly Detection model temporarily failed to send alarms to Lighthouse due to a bug — issue resolved 
+in October
+✓ The LSTM anomaly detection model underperformed in the 2025 SPC cases backtest, indicating the need for 
+tuning.
+36,8
+10,16
+Downtime
+NAM
+60,6Total
+13,64Avoided Losses
+46,96Actual Losses
+10,16Addressable Losses
+36,8Non Adressable Losses
+To update
+Updated!
+Updated!
+---
+PAGE 4:
+Quarterly Report  | January - December 2025
+37
+2
+Total Successful Cases per 
+Models
+Machine Learning
+Knowledge Based
+# Total Successful Cases
+AddAdd
+1407
+893
+27
+DEFINITIONS
+# USEFUL ALARMS
+Alarms answered by Modec's 
+engineers (Tier2) that were 
+considered true alarms and 
+supported asset health management, 
+resulting in financial gains or not.
+# SUCCESSFUL CASES
+The Alarms that could result in savings 
+to SPC with recommendation to Tier 1, 
+accordingly to the protocol agreed
+# TOTAL Q4 YTD 2025 Alarms
+Number of models that alarmed 
+from January to December  2025 
+at Lighthouse .
+# Total Alarms
+RECOMMENDATIONS FUNNEL (2025 JAN-DEC)
+BREAKDOWN SUCCESFUL CASES - 2025
+Successful cases checklist
+Related alarms have not been issued on the DCS.
+The problem has not been identified in the past in some way.
+The parties confirm the value of Shape’s alarm findings, including Ops. Managers.
+Event identified by machine learning model multiple parameters.
+# Total Useful Alarms
+# Total Q4 YTD 2025 Alarms
+Number of models that alarmed from
+Januray to last quarter/ 2025 at
+Lighthouse .
+# Useful Alarms
+Alarms answered by Modec’s engineers
+(Tier 2) that were considered true alarms
+and supported asset health
+management, resulting in financial gains
+or not.
+# Successful Cases
+A case that has met all the value criteria 
+outlined in MoA Annex 1.
+14
+25
+Total Successful Cases 
+ Status
+Ongoing
+Completed
+To update
+Ajustado
+Ajustado
+(KB Incluso)
+---
+PAGE 5:
+Quarterly Report  | January - December 2025
+AddAdd
+COMPLETED CASES
+BREAKDOWN COMPLETED CASES
+Cases Opened in 2025Cases Opened in 2024
+11
+23
+CO M PL ET E D CA SE   
+20 2 5
+Case opened in 2025
+Case opened in 2024
+34
+Knowledge Based
+Machine Learning
+US$2,1 MM
+Case Opened in 2025
+Case Opened in 2024
+US$9,1 MM
+US$11,2MMTotal
+# Completed Cases
+A successful case supported 
+by evidence demonstrating 
+the execution of the 
+recommended action by 
+Modec.
+25
+2
+Knowledge Based
+Machine Learning
+12
+2
+Apenas 
+ML
+To update
+Apenas 
+ML
+---
