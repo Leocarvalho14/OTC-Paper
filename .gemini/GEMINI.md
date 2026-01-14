@@ -1,0 +1,1 @@
+- The user has strictly forbidden the use of the brand name 'Shape' or 'Shape Intel' in the OTC paper/article. Use generic terms like 'Cognitive Diagnostic Module', 'Digital Platform', or 'Predictive Ecosystem' instead.
