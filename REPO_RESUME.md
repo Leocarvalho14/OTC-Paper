@@ -7,7 +7,7 @@ These files contain detailed tables of every successful predictive maintenance c
 *   **`2022_Successful_Cases.md`**: 23 cases, Total Value: **$4.5M**. Dominance of Knowledge-Based models.
 *   **`2023_Successful_Cases.md`**: 56 cases, Total Value: **$13.4M**. Peak volume of cases. High number of physical failures (rotating equipment).
 *   **`2024_Successful_Cases.md`**: 46 cases, Total Value: **$14.1M**. Technological pivot to Machine Learning (74% of cases).
-*   **`2025_Successful_Cases.md`** & **`2025_Report.md`**: 37 cases (detailed), Total Value: **$18.6M**. Introduction of high-value detection capabilities like Liquid Carry Over (LCO).
+*   **`2025_Successful_Cases.md`** & **`2025_Report.md`**: 37 cases (detailed), Total Value: **$18.6M**. Introduction of high-value detection capabilities.
 
 ## 2. Analysis & Insights
 High-level synthesis of the raw data, tracking trends in efficiency, technology, and financial impact.
@@ -42,4 +42,4 @@ Draft sections for the OTC Paper, describing the strategic "Phases" of the progr
 **Data to Inject into Phase 3 (The AI Solution):**
 *   **Noise Reduction:** AI implementation reduced total alarms by **~49%** (down to 1,407).
 *   **Precision Peak:** Precision hit an all-time high of **63.5%**.
-*   **High-Value Focus:** Average value per case reached **~$501k**, driven by complex detections like LCO ($1.7M+ value).
+*   **High-Value Focus:** Average value per case reached **~$501k**, driven by complex detections ($1.7M+ value).
