@@ -3,9 +3,9 @@
 Following the validation of the Proof of Concept in Phase 1, the program faced specific challenges related to scalability. The objective was to expand the scope from a pilot set of assets to fleet-wide monitoring. However, a critical structural flaw was identified: the linear relationship between engineering effort and asset count created an unsustainable bottleneck. To overcome this, the team formulated three core hypotheses to guide the program's expansion:
 
 **Hypotheses**
-*   **Hypothesis 1 (Relevance & Precision):** Implementing logic derived from Failure Mode, Effects, and Criticality Analysis (FMECA) will improve alarm precision by filtering operational noise and strictly defining "useful alarms" based on engineering context.
+*   **Hypothesis 1 (Relevance & Precision):** Implementing logic derived from Failure Mode and Causes Analysis (FMECA) will improve alarm precision by filtering operational noise and strictly defining "useful alarms" based on engineering context.
 *   **Hypothesis 2 (Scalability via Abstraction):** An **Asset-Centric Data Model** (Semantic Layer) is required to decouple analytical logic from raw historian tags. This abstraction is necessary to enable a "Write Once, Deploy Many" architecture, breaking the linear dependency between development effort and asset count.
-*   **Hypothesis 3 (Diagnostic Efficiency):** Centralizing all operational context—sensors, active alarms, and documentation—into a unified web interface will significantly reduce the Mean Time to Diagnosis (MTTD).
+*   **Hypothesis 3 (Diagnostic Efficiency):** Centralizing all operational context—sensors, active alarms, and documentation—into a unified web interface will significantly reduce time do perform alarm Diagnosis.
 
 **FMECA Integration and Knowledge-Based Models (Addressing Hypothesis 1)**
 To validate Hypothesis 1, the team conducted extensive workshops with subject matter experts to redefine the criteria for "useful alarms." Using the ISO 13379 series as a framework, the program pivoted from generic anomaly detection to specific failure mode identification.
