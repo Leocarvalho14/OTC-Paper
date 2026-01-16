@@ -3308,6 +3308,7 @@ VESSEL EQUIPMENT | TAG
 MV30 MV30-CBA-2430A (RE-INJECTION)
 CASE 1.29 | MV30 – Vibration increase on gearbox Vorecon compressor
 EVENT SUMMARY
+• Vorecon: A variable-speed planetary gear combining a hydrodynamic torque converter with a planetary gear for efficient compressor speed control.
 • Multiparameter Machine Learning: Advanced Bearing Vibration & 
 Temperature Increase Detection model with 20 parameters as input 
 data alarmed after detecting a growth trend in temperature.

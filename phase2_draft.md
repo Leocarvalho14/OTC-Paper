@@ -8,9 +8,19 @@ Following the validation of the Proof of Concept in Phase 1, the program faced s
 *   **Hypothesis 3 (Diagnostic Efficiency):** Centralizing all operational context—sensors, active alarms, and documentation—into a unified web interface will significantly reduce time do perform alarm Diagnosis.
 
 **FMECA Integration and Knowledge-Based Models (Addressing Hypothesis 1)**
-To validate Hypothesis 1, the team conducted extensive workshops with subject matter experts to redefine the criteria for "useful alarms." Using the ISO 13379 series as a framework, the program pivoted from generic anomaly detection to specific failure mode identification.
+![Conceptual illustration distinguishing Failure Modes from Failure Causes](./otc1.png)
+*Figure: Conceptual illustration distinguishing Failure Modes (symptoms) from Failure Causes (root causes), mapped to the P-F Curve.*
 
-This shift led to the widespread adoption of **Knowledge-Based models**, which utilize engineering equations and pre-established design limits to identify known failure patterns. Unlike generic data-driven alerts, these models direct the user's attention to specific, actionable issues (e.g., distinguishing "Lube Oil Filter Clogging" from general "Vibration Anomaly"). This approach drastically reduced false positives and standardized the definition of a "success case" from simply "catching an anomaly" to "preventing a specific failure mode."
+To address the major problem identified in Phase 1 related to low alert precision driven by a high volume of false alarms, the first hypothesis of Phase 2 focused on redefining what should be considered a useful or actionable alarm from the end-user perspective. Interviews revealed a misalignment between anomalies detected by data-driven models and conditions that engineers associate with meaningful failure development. In the absence of a shared definition, model development had been driven primarily by statistical deviations rather than operational relevance, creating a gap between what was being developed and what effectively supported user decision-making.
+
+A representative example involved a slightly increase in vibration levels in a centrifugal pump that triggered an alarm because the pattern had not been observed in the model training data. Upon evaluation by SMEs, it was reported that the increased vibration could be justified by a significant pump flow temporarily reduction induced by process requirement changes. In such case, although the vibration deviated from its historical baseline, it did not indicate the onset of a vibration-related failure mode and should not be alarming.
+
+To avoid such situations, several workshops were conducted with SMEs to capture their diagnostic reasoning and establish clear definition of alarm relevant. These sessions aimed to define which degradation patterns should be considered indicative of specific failure modes and what contextual information should accompany each alert to expedite their diagnosis phase. This effort was grounded in FMECA approach, with workshops strongly inspired in ISO 13379 series for condition monitoring and diagnostics.
+
+This shift led to the widespread adoption of **Knowledge-Based models**, which utilize engineering equations and pre-established design limits to identify known failure patterns. Unlike generic data-driven alerts, these models direct the user's attention to specific, actionable issues (e.g., distinguishing "Lube Oil Filter Clogging" from general "Vibration Anomaly"). ...standardized the definition of a "success case" from simply "catching an anomaly" to "preventing a specific failure mode."
+
+![FMECA-based logic structure](./otc2.png)
+*Figure: FMECA-based logic structure defining the relationship between Failure Modes, Failure Causes, and their respective Detection Algorithms.*
 
 **The Asset-Centric Data Model (Addressing Hypothesis 2)**
 Hypothesis 2 addressed the primary technical bottleneck: the Phase 1 "Direct Tag Binding" architecture. In that initial flat architecture, analytical models were coupled directly to raw sensor tags (e.g., `40_TI_1434.PV`) within the historian database. This created significant friction:
