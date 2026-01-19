@@ -27,14 +27,19 @@ This structured approach relied on precise definitions to guide algorithm develo
 This distinction is further illustrated by the P-F Curve. **Failure Modes**, representing the visible symptoms, are situated in the P-F interval—the critical window between the point of detectability (P) and functional failure (F). Detecting these modes allows for timely intervention before total loss of function. In contrast, **Failure Causes** are linked to the latent period *prior* to point P. By identifying and mitigating these root causes (e.g., poor lubrication quality or operating outside design limits), the strategy shifts from detection to prevention, aiming to extend the time before degradation begins or avoiding the point of potential failure altogether.
 
 **The Asset-Centric Data Model (Addressing Hypothesis 2)**
-Hypothesis 2 addressed the primary technical bottleneck: the Phase 1 "Direct Tag Binding" architecture. In that initial flat architecture, analytical models were coupled directly to raw sensor tags (e.g., `40_TI_1434.PV`) within the historian database. This created significant friction:
-*   **Manual Mapping:** Deploying a model to a new asset required manually locating and hard-coding specific tags, as nomenclature varied significantly between FPSOs.
-*   **Fragility:** If a sensor was replaced and its tag name changed, the hard-coded link would break, causing model failure.
-*   **Developer Waste:** Developers spent an estimated 80% of their time on tag mapping rather than analytical development.
+Hypothesis 2 addressed the primary technical bottleneck: the Phase 1 "Direct Tag Binding" architecture. In that initial flat architecture, analytical models were coupled directly to raw sensor tags (e.g., `40_TI_1434.PV`) within the historian database. This created significant friction, primarily through **Manual Mapping**, where deploying a model to a new asset required manually locating and hard-coding specific tags due to varying nomenclature between FPSOs. This led to **Fragility**, as replacing a sensor or changing a tag name would break the hard-coded link and cause model failure. Consequently, this resulted in significant **Developer Waste**, with analytical efforts overshadowed by the repetitive need for manual data reconciliation.
 
-To resolve this, the team implemented the **Asset-Centric Data Model**, a semantic abstraction layer that functions through a two-step process:
-1.  **Normalization:** Raw historian identifiers are mapped once to a standardized "Asset Template." For example, tag `40_TI_1434.PV` is mapped to the standard attribute `Radial Bearing Temp. DE` (Drive End) within the Compressor class.
-2.  **Abstraction:** Analytical models are re-written to ingest these standard attributes.
+Practical instances of these bottlenecks included:
+*   **Manual Coding:** Developing a model for Compressor A required a data scientist to manually locate specific tags and hard-code them into the algorithm.
+*   **Deployment Friction:** Deploying the same model to Compressor B was not a simple replication. Because tag nomenclature often varies between assets (and even more significantly across different FPSOs), engineers had to manually map new tags (e.g., `40_TI_1433.PV`) for every new instance.
+*   **System Fragility:** If a sensor was replaced and the tag name changed in the PIMS, the hard-coded link would break, causing immediate model failure.
+
+To resolve this, the team implemented the **Asset-Centric Data Model**, a semantic abstraction layer that functions through a two-step process: **Normalization**, where raw historian identifiers are mapped once to a standardized "Asset Template" (e.g., mapping tag `40_TI_1434.PV` to the standard attribute `Radial Bearing Temp. DE` within the Compressor class); and **Abstraction**, where analytical models are re-written to ingest these standard attributes.
+
+This architectural evolution is illustrated below, contrasting the rigid "point-to-point" integration of Phase 1 with the decoupled, scalable architecture enabled by the semantic layer.
+
+![Comparison of Direct Tag Binding vs. Asset-Centric Data Model](./otc3.png)
+*Figure: Comparison between the initial 'Direct Tag Binding' approach (Top) and the scalable 'Asset-Centric Data Model' (Bottom), highlighting the role of the Semantic Context layer.*
 
 This semantic layer fundamentally changed deployment velocity. By decoupling model logic from the data source, the program achieved a **"Write Once, Deploy Many"** capability. A model defined for a specific equipment class (e.g., Water Injection Pumps) could be instantly instantiated across hundreds of identical assets. This architecture shifted engineering focus from data wrangling to value-added tasks such as model tuning and failure analysis.
 
