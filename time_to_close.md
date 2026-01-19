@@ -134,10 +134,15 @@ This section tracks the lifecycle of successful predictive maintenance cases rec
 
 # Comparative Conclusion
 
-Comparing the performance between 2024 and 2025 reveals a significant improvement in the efficiency of case resolution:
+Comparing the performance between 2024 and 2025 reveals a significant improvement in the efficiency of case resolution, both in terms of speed and volume.
 
-*   **2024 Average Time to Close:** 76.2 days
-*   **2025 Average Time to Close:** 53.5 days
-*   **Net Reduction:** **22.7 days**
+| Metric | 2024 | 2025 | Improvement |
+| :--- | :---: | :---: | :---: |
+| **Closed Cases** | 12 | 23 | +11 (+91.7%) |
+| **Avg Time to Close** | 76.2 days | 53.5 days | -22.7 days (-29.8%) |
 
-This represents a **29.8% reduction** in the average time required to close a successful case. This improvement suggests more streamlined maintenance workflows, faster engineering validation, and enhanced collaboration between the predictive maintenance team and offshore operations in 2025.
+**Key Takeaways:**
+*   **Increased Throughput:** The team successfully closed nearly double the number of cases in 2025 compared to 2024 (23 vs 12).
+*   **Faster Resolution:** Despite the significantly higher volume of closed cases, the average time to resolve them decreased by **29.8%** (22.7 days faster).
+
+This data indicates a major efficiency gain in 2025, suggesting more streamlined maintenance workflows, faster engineering validation, and enhanced collaboration between the predictive maintenance team and offshore operations.
